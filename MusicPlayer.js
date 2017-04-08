@@ -125,7 +125,7 @@ let model = {
             {
                 name: "LOOK OUT FOR DETOX",
                 year: 2010,
-                album: "",
+                album: "none",
                 songlink : "https://www.youtube.com/embed/B5eT6TaEtPI"
 
             }
