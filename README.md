@@ -7,7 +7,7 @@ Playlist (Javascript object) with some of my favorite songs. Track and artist in
 * Purpose:
     * Learn how to make an object
     * Learn how to access the properties of an object 
-    * Learn how to make user input change which object property is accessed  
+    * Learn how user input can change which object property is accessed  
  
     
     
