@@ -2,7 +2,7 @@
 
 let musicPlayer={
     play: function(song, artist) {
-        this.text = "\"<em>" + song.name + "</em>\"" + " by " + artist + ". Album <b>" + song.album + "</b>, " + song.year;
+        this.text = "\"<em>" + song.name + "</em>\"" + " by " + artist + ". Album <em>" + song.album + "</em>, " + song.year;
     },
 
     pause: function(){
