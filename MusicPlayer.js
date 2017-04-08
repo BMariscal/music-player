@@ -1,5 +1,7 @@
 
 
+
+
 let musicPlayer={
     play: function(song, artist) {
         this.text = "\"<em>" + song.name + "</em>\"" + " by " + artist + ". Album <b>" + song.album + "</b>, " + song.year;
@@ -40,6 +42,13 @@ let model = {
                 album: "Flume",
                 songlink : "https://www.youtube.com/embed/4l15evegaKo"
 
+            },
+            {
+                name: "Sleepless feat. Jezzabell Doran",
+                year : 2012,
+                album: "Flume",
+                songlink : "https://www.youtube.com/embed/V7-yAX9ijuM"
+
             }
         ]
     },
@@ -70,7 +79,16 @@ let model = {
                 album: "Good Kid, M.A.A.D City",
                 songlink : "https://www.youtube.com/embed/ns1ykzcCJlM"
 
+            },
+
+            {
+                name: "The Recipe (Lyric Video) ft. Dr. Dre",
+                year: 2012,
+                album: "Good Kid, M.A.A.D City",
+                songlink : "https://www.youtube.com/embed/YpugK0RpEaU"
+
             }
+
         ]
     }
 }
