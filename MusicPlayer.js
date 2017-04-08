@@ -2,7 +2,7 @@
 
 let musicPlayer={
     play: function(song, artist) {
-        this.text = "\"<em>" + song.name + "</em>\"" + " by " + artist + ". Album <em>" + song.album + "</em>, " + song.year;
+        this.text = "\"<em>" + song.name + "</em>\"" + " by " + artist + ". Album <b>" + song.album + "</b>, " + song.year;
     },
 
     pause: function(){
@@ -54,6 +54,20 @@ let model = {
                 album: "Skin",
                 songlink : "https://www.youtube.com/embed/5IqDR2WjVl8"
 
+            },
+            {
+                name: "Weekend feat. Moses Sumney",
+                year : 2017,
+                album: "Skin Companion EP II",
+                songlink : "https://www.youtube.com/embed/DT9BrbtKdTM"
+
+            },
+            {
+                name: "Ezra",
+                year : 2012,
+                album: "Flume",
+                songlink : "https://www.youtube.com/embed/MGtKETJIcZs"
+
             }
         ]
     },
@@ -100,6 +114,20 @@ let model = {
                 album: "To Pimp a Butterfly",
                 songlink : "https://www.youtube.com/embed/jltN3fLFmTQ"
 
+            },
+            {
+                name: "Rigamortis",
+                year: 2011,
+                album: "Section.80",
+                songlink : "https://www.youtube.com/embed/Niu9KMEGsx4"
+
+            },
+            {
+                name: "LOOK OUT FOR DETOX",
+                year: 2010,
+                album: "",
+                songlink : "https://www.youtube.com/embed/B5eT6TaEtPI"
+
             }
 
 
@@ -128,3 +156,4 @@ function myFunction() {
 
 
 }
+
