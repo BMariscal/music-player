@@ -1,7 +1,5 @@
 
 
-
-
 let musicPlayer={
     play: function(song, artist) {
         this.text = "\"<em>" + song.name + "</em>\"" + " by " + artist + ". Album <b>" + song.album + "</b>, " + song.year;
@@ -49,6 +47,13 @@ let model = {
                 album: "Flume",
                 songlink : "https://www.youtube.com/embed/V7-yAX9ijuM"
 
+            },
+            {
+                name: "Take a Chance feat. Little Dragon",
+                year : 2016,
+                album: "Skin",
+                songlink : "https://www.youtube.com/embed/5IqDR2WjVl8"
+
             }
         ]
     },
@@ -82,12 +87,21 @@ let model = {
             },
 
             {
-                name: "The Recipe (Lyric Video) ft. Dr. Dre",
+                name: "The Recipe ft. Dr. Dre",
                 year: 2012,
                 album: "Good Kid, M.A.A.D City",
                 songlink : "https://www.youtube.com/embed/YpugK0RpEaU"
 
+            },
+
+            {
+                name: "i",
+                year: 2015,
+                album: "To Pimp a Butterfly",
+                songlink : "https://www.youtube.com/embed/jltN3fLFmTQ"
+
             }
+
 
         ]
     }
