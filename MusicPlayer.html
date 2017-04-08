@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Video Player</title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <style>
+        html,body{
+
+            width:100%;
+            height:100%;
+            font-family: 'Crimson Text', serif;
+
+
+        }
+
+        .depth {
+            display: block;
+            border: 1px solid rgba(255,255,255,0.6);
+            background: linear-gradient(#eee, #fff);
+            transition: all 0.3s ease-out;
+            box-shadow:
+                    inset 0 1px 4px rgba(0,0,0,0.4);
+            padding: 5px;
+            color: #3668ff;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .center{
+
+            text-align: center;
+        }
+
+
+        .padding{
+
+            padding-bottom: 40px;
+        }
+
+        .top {
+            width: 79%;
+            height: 100px;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 2px 2px 10px grey;
+            margin:0px auto;
+            display:block;
+            border: groove;
+            border-width: 1px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .middle {
+            width: 42%;
+            height: 45%;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 2px 2px 10px grey;
+            margin:0px auto;
+            display:block;
+            border: groove;
+            border-width: 1px;
+            background-color: rgba(251, 213, 225, 0.81);
+        }
+        .left {
+            position: absolute;
+            left: 11%;
+            width: 15%;
+            height: 150px;
+            border: 1px solid lightslategrey;
+            margin-top: 0%;
+        }
+        .right {
+            position: absolute;
+            right: 9%;
+            margin-left: 10px;
+            width: 15%;
+            height: 150px;
+            border: 1px solid lightslategrey;
+            margin-top: 0%;
+        }
+
+
+
+
+    </style>
+</head>
+<body style="background-color:#31383b">
+<div class="top container">
+<h1 class="center"> My Music Player</h1>
+</div>
+<br>
+<div class="left container">
+    <img src="https://media.giphy.com/media/oFgPs9HxVPZRu/giphy.gif" alt="dancing gif" width="100%" height="100%">
+</div>
+<div class="right container">
+    <img src="https://media3.giphy.com/media/GVS2thIY8oaWc/giphy.gif" alt="dancing gif" width="100%" height="100%">
+</div>
+<div class="middle container">
+<p class="center">Artist Name</p>
+<input type="text" id="artist" width="20%"  class="depth" value="Flume or Kendrick"><br>
+<br>
+    <div class="left container">
+        <img src="https://media.giphy.com/media/vl8ncD72EnhoA/giphy.gif" alt="dancing gif" width="100%" height="100%">
+    </div>
+    <div class="right container">
+        <img src="https://media.giphy.com/media/l4JyTYgMTj5pa5cQw/giphy.gif" alt="dancing gif" width="100%" height="100%">
+    </div>
+
+    <p class="center">Track Number</p>
+ <input type="number" min="1" max ="4" id="track" width="20%"  class="depth" value="track1 or track2">
+<br><br>
+    <div class="left container">
+        <img src="https://media.giphy.com/media/3oEduOtNe7lOFnBpmw/giphy.gif" alt="dancing gif" width="100%" height="100%">
+    </div>
+    <div class="right container">
+        <img src="https://media.giphy.com/media/26BRKEDGBicmow252/giphy.gif" alt="dancing gif" width="100%" height="100%">
+    </div>
+
+
+<input style="color:blue; margin:0px auto; display:block;" type='button' onclick='myFunction()' value='Listen'/>
+<p style="text-align:center;"><b id='demo'></b></p>
+
+</div>
+
+
+
+
+<br>
+
+
+<iframe id="ytplayer" style="margin-left: auto;margin-right: auto;display: block;" type="text/html" width="640" height="360"
+        src="https://www.youtube.com/embed/YHq409fKBk8"
+        frameborder="0"></iframe>
+
+<script src="MusicPlayer.js"></script>
+<p class="padding"></p>
+</body>
+</html>
