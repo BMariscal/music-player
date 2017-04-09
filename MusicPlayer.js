@@ -1,8 +1,10 @@
 
 
+
+
 let musicPlayer={
     play: function(song, artist) {
-        this.text = "\"<em>" + song.name + "</em>\"" + " by " + artist + ". Album <em>" + song.album + "</em>, " + song.year;
+        this.text = "\"<em>" + song.name + "</em>\"" + " by " + artist + ". Album <b>" + song.album + "</b>, " + song.year;
     },
 
     pause: function(){
@@ -11,6 +13,10 @@ let musicPlayer={
             document.write("Pausing player. Thanks for listening.");}
     }
 };
+
+
+
+
 
 let model = {
     Flume : {
@@ -125,8 +131,15 @@ let model = {
             {
                 name: "LOOK OUT FOR DETOX",
                 year: 2010,
-                album: "none",
+                album: "",
                 songlink : "https://www.youtube.com/embed/B5eT6TaEtPI"
+
+            },
+            {
+                name: "A.D.H.D",
+                year: 2011,
+                album: "Section.80",
+                songlink: "https://www.youtube.com/embed/QjlFqgRbICY"
 
             }
 
@@ -157,3 +170,24 @@ function myFunction() {
 
 }
 
+let input = document.querySelector('#artist');
+
+
+input.addEventListener('blur', function()
+{
+
+    let playListArtist = input.value;
+    let trackInput = document.getElementById("track");
+    if (model.hasOwnProperty(playListArtist)) {
+        let trackCount = model[playListArtist].tracks.length;
+        trackInput.max = trackCount;
+        trackInput.disabled = false;
+        if (trackInput.value > trackCount) {
+            trackInput.value = trackCount;
+        }
+    } else {
+        trackInput.value = 0;
+        trackInput.disabled = true;
+    }
+
+});
