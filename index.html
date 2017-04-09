@@ -43,7 +43,7 @@
 
         .top {
             color: #7a5d10;
-            width: 79%;
+            width: 80%;
             height: 100px;
             padding: 15px;
             background-color: white;
@@ -58,6 +58,7 @@
         }
         .middle {
             width: 42%;
+            height: 45%;
             padding: 15px;
             background-color: white;
             box-shadow: 2px 2px 10px grey;
@@ -71,23 +72,32 @@
 
 
         }
+        .middle-bottom{
+
+            display:flex;
+            justify-content:center;
+            align-items:flex-end;
+            margin-top: 1%;
+
+        }
 
         .left {
             position: absolute;
-            left: 11%;
+            left: 9%;
             width: 15%;
             height: 150px;
             border: 1px solid lightslategrey;
-            margin-top: 0%;
+            margin-right: 40%;
+
         }
         .right {
             position: absolute;
-            right: 9%;
-            margin-left: 10px;
+
+            right:8%;
             width: 15%;
             height: 150px;
             border: 1px solid lightslategrey;
-            margin-top: 0%;
+
         }
 
 
@@ -100,33 +110,29 @@
 <h1 class="center"> My Music Player</h1>
 </div>
 <br>
-<div class="container" style="padding-bottom:5%;">
+<div class="container">
 <div class="left">
     <img src="https://media.giphy.com/media/oFgPs9HxVPZRu/giphy.gif" alt="dancing gif" width="100%" height="100%">
+    <img src="https://media.giphy.com/media/vl8ncD72EnhoA/giphy.gif" alt="dancing gif" width="100%" height="100%">
+
 </div>
 <div class="right">
     <img src="https://media3.giphy.com/media/GVS2thIY8oaWc/giphy.gif" alt="dancing gif" width="100%" height="100%">
+    <img src="https://media.giphy.com/media/l4JyTYgMTj5pa5cQw/giphy.gif" alt="dancing gif" width="100%" height="100%">
+
 </div>
+
 <div class="middle">
+
 <p class="center">Artist Name</p>
 <input type="text" id="artist" width="20%"  class="depth" value="Flume or Kendrick"><br>
 <br>
-    <div class="left">
-        <img src="https://media.giphy.com/media/vl8ncD72EnhoA/giphy.gif" alt="dancing gif" width="100%" height="100%">
-    </div>
-    <div class="right">
-        <img src="https://media.giphy.com/media/l4JyTYgMTj5pa5cQw/giphy.gif" alt="dancing gif" width="100%" height="100%">
-    </div>
+
 
     <p class="center">Track Number</p>
  <input type="number" min="1" max ="8" id="track" width="20%"  class="depth" value="track1 or track2">
 <br><br>
-    <div class="left">
-        <img src="https://media.giphy.com/media/3oEduOtNe7lOFnBpmw/giphy.gif" alt="dancing gif" width="100%" height="100%">
-    </div>
-    <div class="right">
-        <img src="https://media.giphy.com/media/26BRKEDGBicmow252/giphy.gif" alt="dancing gif" width="100%" height="100%">
-    </div>
+
 
 
 <input style="color:#63490d; margin:0px auto; display:block;" type='button' onclick='myFunction()' value='Listen'/>
@@ -134,13 +140,31 @@
 
 </div>
 
+
+
+    <div class="middle-bottom">
+
+        <iframe id="ytplayer" style="margin-left: auto;margin-right: auto;display: block;" type="text/html" width="640" height="360"
+                src="https://www.youtube.com/embed/YHq409fKBk8"
+                frameborder="0"></iframe>
+        <p class="padding"></p>
+        <script src="MusicPlayer.js"></script>
+
+
+
+
+
+
     </div>
+
+</div>
+
+
 <br>
 
-<div class="container" style="padding-top:5%;"><iframe id="ytplayer" style="margin-left: auto;margin-right: auto;display: block;" 
-      type="text/html" width="640" height="360" src="https://www.youtube.com/embed/YHq409fKBk8" frameborder="0"></iframe></div>
-<p class="padding"></p>
-<script src="MusicPlayer.js"></script>
+
+
+
 </body>
 </html>
 
