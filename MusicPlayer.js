@@ -200,7 +200,7 @@ function myFunction() {
 
     if (!model.hasOwnProperty(artistInput)) {
         // warning shit goes here
-        return window.alert("Incorrect artist input");
+        return window.alert("Incorrect artist input. Please enter one of the following: Flume, Kendrick, Guerra");
     }
 
     let song = model[artistInput].tracks[trackInput - 1];
