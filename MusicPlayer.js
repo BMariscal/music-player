@@ -2,6 +2,7 @@
 
 
 
+
 let musicPlayer={
     play: function(song, artist) {
         this.text = "\"<em>" + song.name + "</em>\"" + " by " + artist + ". Album <b>" + song.album + "</b>, " + song.year;
@@ -145,7 +146,51 @@ let model = {
 
 
         ]
+    },
+    Guerra  : {
+        tracks : [
+            {
+                name : "La Cosquillita",
+                year : 1994,
+                album : "Fogaraté",
+                songlink : "https://www.youtube.com/embed/vMmuZdzEdDU"
+            },
+            {
+                name : "A Pedir Su Mano",
+                year : 1990,
+                album : "Bachata Rosa",
+                songlink : "https://www.youtube.com/embed/hGYhaIeDQSE"
+            },
+            {
+                name: "Guavaberry",
+                year: 1987,
+                album: "Mientras Más Lo Pienso...Tú",
+                songlink : "https://www.youtube.com/embed/frdeisutNpc"
+
+            },
+            {
+                name: "Burbujas de amor",
+                year: 1990,
+                album: "Bachata Rosa",
+                songlink : "https://www.youtube.com/embed/PkhSqy7ldEg"
+
+            },
+
+            {
+                name: "Ojalá Que Llueva Café",
+                year: 1989,
+                album: "Ojalá Que Llueva Café",
+                songlink : "https://www.youtube.com/embed/XZOLOggfWp0"
+
+            }
+
+
+
+        ]
     }
+
+
+
 }
 
 function myFunction() {
