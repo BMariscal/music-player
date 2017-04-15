@@ -95,7 +95,7 @@ let model = {
             {
                 name: "HUMBLE",
                 year: 2017,
-                album: "Album",
+                album: "DAMN",
                 songlink : "https://www.youtube.com/embed/tvTRZJ-4EyI"
 
             },
