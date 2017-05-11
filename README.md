@@ -14,3 +14,8 @@ Playlist (Javascript object) with some of my favorite songs. Track and artist in
  
     
     
+*Future Improvements:
+   * Use the Spotify API to access artist names and playlist
+   * Use the Youtube API to access youtube videos based on artist names
+   
+   
